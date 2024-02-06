@@ -1,0 +1,21 @@
+{
+  "status": {
+    "verified": "skip",
+    "sentCount": "type:Integer"
+  },
+  "_id": "${animal.id}",
+  "user": {
+    "name": {
+      "first": "type:String",
+      "last": "type:String"
+    },
+    "_id": "type:String",
+    "photo": "https://cat-fact.herokuapp.com/img/res/avatars/user-face.png"
+  },
+  "text": "type:String",
+  "type": "type:String",
+  "deleted": false,
+  "createdAt": "predicate:datePredicate",
+  "updatedAt": "predicate:datePredicate",
+  "__v": "type:Integer"
+}

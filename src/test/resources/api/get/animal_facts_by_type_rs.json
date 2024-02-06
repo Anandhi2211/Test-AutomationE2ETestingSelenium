@@ -1,0 +1,14 @@
+{
+  "status": {
+    "verified": "skip",
+    "sentCount": "type:Integer"
+  },
+  "_id": "type:String",
+  "user": "type:String",
+  "text": "type:String",
+  "type": "${animal.animalType}",
+  "deleted": false,
+  "createdAt": "predicate:datePredicate",
+  "updatedAt": "predicate:datePredicate",
+  "__v": "type:Integer"
+}
