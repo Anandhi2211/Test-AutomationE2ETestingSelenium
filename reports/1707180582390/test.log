@@ -1,0 +1,172 @@
+[2024-02-06 12:49:42] [1] [INFO] [TestNG] Running:
+  C:\Users\anand\AppData\Local\JetBrains\IdeaIE2022.2\temp-testng-customsuite.xml
+
+[2024-02-06 12:49:46] [1] [INFO] Request method:	GET
+Request URI:	https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=10
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707180585&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=2NEazRC3TVF5LjhvlWXYtQkwt4Qzws7dznvk%2B6g7gQw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707180585&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=2NEazRC3TVF5LjhvlWXYtQkwt4Qzws7dznvk%2B6g7gQw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2568
+Etag: W/"a08-30JOWNTgiOXklnY2htiY36TyXF0"
+Set-Cookie: connect.sid=s%3A2_PCd7vKAUVfHiv7XLy6_N7RfL6aSS4z.rNABaV7%2FENDITGJc%2FBYf2xObrm9R99GxvaIK9ENIC1Q; Path=/; HttpOnly
+Date: Tue, 06 Feb 2024 00:49:45 GMT
+Via: 1.1 vegur
+connect.sid=s%3A2_PCd7vKAUVfHiv7XLy6_N7RfL6aSS4z.rNABaV7%2FENDITGJc%2FBYf2xObrm9R99GxvaIK9ENIC1Q;Path=/;HttpOnly
+[
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "61c6238137709f33abba71e6",
+        "user": "61c46a7495ba44272eb975e2",
+        "text": "Коты спят полдня.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2021-12-24T19:46:09.672Z",
+        "updatedAt": "2021-12-24T19:46:09.672Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6239e8026f13e62a722fc55b",
+        "user": "61b8a19266b26cede617e5a2",
+        "text": "Bhjkhvkjhv.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-03-22T15:15:14.594Z",
+        "updatedAt": "2022-03-22T15:15:14.594Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "626d2003e5fb639a3c4fb783",
+        "user": "626830ba4514425908fc9af5",
+        "text": "Cats and dogs are colour blind.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-04-30T11:39:47.819Z",
+        "updatedAt": "2022-04-30T11:39:47.819Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "62673380cdcef2bc79a4c910",
+        "user": "6262fc13f782346dbf6643ac",
+        "text": "I never love cats.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-04-25T23:49:20.958Z",
+        "updatedAt": "2022-04-25T23:49:20.958Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "649ee50974b74413262ecb1b",
+        "user": "647f54f28e4a4f596e4db733",
+        "text": "Is it black cat.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-06-30T14:22:01.346Z",
+        "updatedAt": "2023-06-30T14:22:01.346Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "62b85ca2120f313597a62607",
+        "user": "62a83d1e47a75f7c3fb40420",
+        "text": "Cat like djamp.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-06-26T13:18:26.266Z",
+        "updatedAt": "2022-06-26T13:18:26.266Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6422d638349dc6f2c6777d82",
+        "user": "6420138c91e41c8af78a93fd",
+        "text": "Whatsup cat.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-03-28T11:57:44.077Z",
+        "updatedAt": "2023-03-28T11:57:44.077Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "647a178ec814b98a0f1d7e62",
+        "user": "6477aae4dce8b01234b60b80",
+        "text": "Uihjh bhbhjui.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-06-02T16:23:42.083Z",
+        "updatedAt": "2023-06-02T16:23:42.083Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6408cdacce979a655921948a",
+        "user": "640103d49444b2a501a0f012",
+        "text": "Кот кот.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-03-08T18:02:20.071Z",
+        "updatedAt": "2023-03-08T18:02:20.071Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "640e2f5159ce917bc0d1d49c",
+        "user": "640d919b59ce917bc0d179c8",
+        "text": "There are many ways to refer to a group of cats. no ok.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-03-12T20:00:17.791Z",
+        "updatedAt": "2023-03-12T20:00:17.791Z",
+        "__v": 0
+    }
+]
+

@@ -1,0 +1,186 @@
+[2024-02-06 03:45:10] [1] [INFO] [TestNG] Running:
+  C:\Users\anand\AppData\Local\JetBrains\IdeaIE2022.2\temp-testng-customsuite.xml
+
+[2024-02-06 03:45:14] [1] [INFO] Request method:	GET
+Request URI:	https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=11
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707191113&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=B9F%2BFv6qh9up%2BqJdgNexU98LcvcJVCteZLWluCiVMyo%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707191113&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=B9F%2BFv6qh9up%2BqJdgNexU98LcvcJVCteZLWluCiVMyo%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2989
+Etag: W/"bad-cTjnJhTk54SlyNP83xQ7TYXeUo8"
+Set-Cookie: connect.sid=s%3Adwep44hSNOxAyUsJVjW53NeWtfYugDFn.y3UUUsBsGm83Sqqkuq6InW0mmo9SXBQgH1vtU%2BKUE5Q; Path=/; HttpOnly
+Date: Tue, 06 Feb 2024 03:45:13 GMT
+Via: 1.1 vegur
+connect.sid=s%3Adwep44hSNOxAyUsJVjW53NeWtfYugDFn.y3UUUsBsGm83Sqqkuq6InW0mmo9SXBQgH1vtU%2BKUE5Q;Path=/;HttpOnly
+[
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6463fb1f456e48f65d7ac0ea",
+        "user": "644fac390388a3c767567e01",
+        "text": "Кошка 2222.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-05-16T21:52:31.863Z",
+        "updatedAt": "2023-05-16T21:52:31.863Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6450d98c707749c65ca25da8",
+        "user": "644ec4ddc761daaf7544473e",
+        "text": "Horse is red.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-05-02T09:36:12.995Z",
+        "updatedAt": "2023-05-02T09:36:12.995Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63d163edad1bbe64b5075287",
+        "user": "6241761ba7107c0e136dbe88",
+        "text": "                                dfghjkl        .",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-25T17:16:29.778Z",
+        "updatedAt": "2023-01-25T17:16:29.778Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "65a0088e4a0b057f944c043a",
+        "user": "6598632d22b133ae60b20a73",
+        "text": "Кот это не собака.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2024-01-11T15:26:06.659Z",
+        "updatedAt": "2024-01-11T15:26:06.659Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "62718a316703b18683186b8e",
+        "user": "626a92522266d0c1d19293b9",
+        "text": "ESLI КОSCHКА МОЕТСЯ - ЭТО К СКОРЫМ GОСТЯМ.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-05-03T20:01:53.956Z",
+        "updatedAt": "2022-05-03T20:01:53.956Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "65aa09d2ba9e25edd10d603e",
+        "user": "65aa0991ba9e25edd10d6004",
+        "text": "Extraordinary Sense of Smell: Cats possess an incredibly sharp sense of smell. They can detect scents up to five to six times better than humans.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2024-01-19T05:34:10.544Z",
+        "updatedAt": "2024-01-19T05:34:10.544Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63c0abfd20d4fcb829bc84eb",
+        "user": "63c0ab2b20d4fcb829bc8462",
+        "text": "Balls.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-13T00:55:25.928Z",
+        "updatedAt": "2023-01-13T00:55:25.928Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63c5382b658b95bea2c7c011",
+        "user": "63bbaedb305a83e75c1fc46f",
+        "text": "Аиич fvsV.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-16T11:42:35.345Z",
+        "updatedAt": "2023-01-16T11:42:35.345Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "626a67ecb37b2b9a2cf3bb89",
+        "user": "6264208cb09884b2f2968e5f",
+        "text": "New fact about cats and dogs.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-04-28T10:09:48.522Z",
+        "updatedAt": "2022-04-28T10:09:48.522Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6463f2f0456e48f65d7ab6e8",
+        "user": "644fac390388a3c767567e01",
+        "text": "Fdfsd.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-05-16T21:17:36.056Z",
+        "updatedAt": "2023-05-16T21:17:36.056Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63e95d5b02677b98311f8808",
+        "user": "63d5869ea8fc3a7021154fb1",
+        "text": "Cats are crazier than dogs.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-02-12T21:42:51.342Z",
+        "updatedAt": "2023-02-12T21:42:51.342Z",
+        "__v": 0
+    }
+]
+

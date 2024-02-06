@@ -1,0 +1,188 @@
+[2024-02-06 03:39:32] [1] [INFO] [TestNG] Running:
+  C:\Users\anand\AppData\Local\JetBrains\IdeaIE2022.2\temp-testng-customsuite.xml
+
+[2024-02-06 03:39:36] [1] [INFO] Request method:	GET
+Request URI:	https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=11
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707190775&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=Aln7pMML%2Fh26XEFR5FypEoSUU2sjt7WPyuPJGxm9lrI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1707190775&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&s=Aln7pMML%2Fh26XEFR5FypEoSUU2sjt7WPyuPJGxm9lrI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2914
+Etag: W/"b62-SMrxUKlZ/0z0t5gkLfdZcV3dEus"
+Set-Cookie: connect.sid=s%3A_qMUmH2iwDtUGyT8IWpAbV8otB4OB93Q.5CYgSSdfcTvo15WeZeym0oip9IMtdeCt4ZJyTLHJGY8; Path=/; HttpOnly
+Date: Tue, 06 Feb 2024 03:39:35 GMT
+Via: 1.1 vegur
+connect.sid=s%3A_qMUmH2iwDtUGyT8IWpAbV8otB4OB93Q.5CYgSSdfcTvo15WeZeym0oip9IMtdeCt4ZJyTLHJGY8;Path=/;HttpOnly
+[
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "61b119cff9c77cdad2d21c96",
+        "user": "61b11802f9c77cdad2d21bd3",
+        "text": "Cats are funny.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2021-12-08T20:47:11.113Z",
+        "updatedAt": "2021-12-08T20:47:11.113Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "5f59cb38d52dfc0017fb6f74",
+        "used": false,
+        "source": "user",
+        "type": "cat",
+        "deleted": false,
+        "user": "5f57459d266c0600175937e9",
+        "text": "There are cases of cats reacting to natural disasters long before they happened.",
+        "createdAt": "2020-09-10T06:44:08.299Z",
+        "updatedAt": "2020-09-10T06:44:08.299Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63c411ea2e5d8fd503485ba5",
+        "user": "63ba7c9d9964acb3c4caa7ce",
+        "text": "Cats have healing powers.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-15T14:47:06.994Z",
+        "updatedAt": "2023-01-15T14:47:06.994Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63f0384f41b827eb0bcb16cc",
+        "user": "63f0383141b827eb0bcb16be",
+        "text": "Dfsdf.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-02-18T02:30:39.154Z",
+        "updatedAt": "2023-02-18T02:30:39.154Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63f8d97bf833e2c402a208ac",
+        "user": "63f8d90cf833e2c402a20860",
+        "text": "Ñll.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-02-24T15:36:27.969Z",
+        "updatedAt": "2023-02-24T15:36:27.969Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "6453ba5cfe1b1ed1df39116f",
+        "user": "6453a4bcfe1b1ed1df38fbbd",
+        "text": "Fact about sleep.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-05-04T13:59:56.448Z",
+        "updatedAt": "2023-05-04T13:59:56.448Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63ea6fe102677b983120031c",
+        "user": "63c70e51220958920a70050c",
+        "text": "Me love too.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-02-13T17:14:09.425Z",
+        "updatedAt": "2023-02-13T17:14:09.425Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "62b191e67ba56cc1ff722262",
+        "user": "62a7570f47a75f7c3fb373a1",
+        "text": "New fact 22.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2022-06-21T09:39:50.556Z",
+        "updatedAt": "2022-06-21T09:39:50.556Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "648319fe3ad66ef4a7ec69a6",
+        "user": "64775e3bdce8b01234b5ddbc",
+        "text": "Fdsgdsfgsdf.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-06-09T12:24:30.873Z",
+        "updatedAt": "2023-06-09T12:24:30.873Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63c3ee8e2e5d8fd5034846e3",
+        "user": "63b9a6739964acb3c4ca7841",
+        "text": "Говорят не повезёт, если чёрный кот дорогу перейдёт. Вот.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-15T12:16:14.905Z",
+        "updatedAt": "2023-01-15T12:16:14.905Z",
+        "__v": 0
+    },
+    {
+        "status": {
+            "verified": null,
+            "sentCount": 0
+        },
+        "_id": "63ce59f0e4049b334497cd34",
+        "user": "63bffafe7faacb8ad47ba92b",
+        "text": "Коее077.",
+        "type": "cat",
+        "deleted": false,
+        "createdAt": "2023-01-23T09:57:04.876Z",
+        "updatedAt": "2023-01-23T09:57:04.876Z",
+        "__v": 0
+    }
+]
+

@@ -1,0 +1,9 @@
+{
+  "id": 3702,
+  "uid": "8783c0c3-8055-4175-b9d1-be26ec2f5184",
+  "account_number": "8406684624",
+  "iban": "GB69IPMV23457728952285",
+  <#if bank_name??>"bank_name": "${bank_name}",</#if>
+  "routing_number": "027865192",
+  "swift_bic": "BARBGB2LKEN"
+}
