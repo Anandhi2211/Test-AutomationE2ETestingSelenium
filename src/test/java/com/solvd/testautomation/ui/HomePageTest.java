@@ -1,21 +1,41 @@
 package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.components.Header;
+import com.solvd.testautomation.ui.components.MenuOption;
 import com.solvd.testautomation.ui.components.ProductItem;
 import com.solvd.testautomation.ui.components.SearchComponent;
 import com.zebrunner.carina.core.AbstractTest;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
 public class HomePageTest extends AbstractTest {
+
+    @Test
+    public void verifyJoinUsTest(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        MenuOption menuOption = homePage.getMenuOption();
+        menuOption.getJoinUs().click();
+    }
+
+    @Test
+    public void verifyHelpTest(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        MenuOption menuOption = homePage.getMenuOption();
+        menuOption.getHelp().click();
+    }
+
+    @Test
+    public void verifyFindStoreTest(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        MenuOption menuOption = homePage.getMenuOption();
+        menuOption.getFindStore().click();
+    }
 
     @Test
     public void verifySearchTest(){
@@ -36,6 +56,7 @@ public class HomePageTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Header header = homePage.getHeader();
+
         header.getNewFeature().click();
         FeaturePage featurePage = new FeaturePage(getDriver());
         List<ProductItem> itemList = featurePage.getItemList();
@@ -49,7 +70,7 @@ public class HomePageTest extends AbstractTest {
     }
 
     @Test
-    public void clickCheckBox(){
+    public void clickCategoryOptionTest(){
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Header header = homePage.getHeader();
