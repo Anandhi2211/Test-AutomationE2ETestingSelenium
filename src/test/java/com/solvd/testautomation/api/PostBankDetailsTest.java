@@ -1,4 +1,4 @@
-package com.solvd.testautomation;
+package com.solvd.testautomation.api;
 
 import com.solvd.testautomation.api.PostBankDetails;
 import org.testng.annotations.Test;

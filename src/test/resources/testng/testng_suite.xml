@@ -4,9 +4,10 @@
 <suite name="Test Automation" verbose="1" parallel="tests" thread-count="10">
     <test name="Test Automation" parallel="methods" thread-count="5">
         <classes>
-            <class name="com.solvd.testautomation.AnimalFactByAnimalTypeTest"></class>
-            <class name="com.solvd.testautomation.AnimalFactByAnimalIdTest"></class>
-            <class name="com.solvd.testautomation.GetWeatherByCoordinateTest"></class>
+            <class name="com.solvd.testautomation.api.AnimalFactByAnimalTypeTest"/>
+            <class name="com.solvd.testautomation.api.AnimalFactByAnimalIdTest"/>
+            <class name="com.solvd.testautomation.api.GetWeatherByCoordinateTest"/>
+            <class name="com.solvd.testautomation.ui.HomePageTest"/>
 
         </classes>
     </test>
