@@ -7,24 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchComponent extends AbstractUIObject {
-    @FindBy(xpath = "//button[@data-var='vsButton']")
+    @FindBy(xpath = ".//button[@data-var='vsButton']")
     private ExtendedWebElement searchButton;
-    @FindBy(xpath = "//input[@id='VisualSearchInput']")
+    @FindBy(xpath = ".//input[@id='VisualSearchInput']")
     private ExtendedWebElement searchTextArea;
-
     public SearchComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
-
     public ExtendedWebElement getSearchButton() {
         return searchButton;
     }
-
     public ExtendedWebElement getSearchTextArea() {
         return searchTextArea;
-    }
-    public String getTypeValue(){
-        return this.searchTextArea.getAttribute("placeholder");
     }
     public void typeValueToSearch(String value){
         this.searchTextArea.type(value);

@@ -13,9 +13,8 @@ public class Header extends AbstractUIObject {
     private ExtendedWebElement men;
     @FindBy(xpath = "//header//*[@class='pt1-lg']//a[@aria-label='Women']")
     private ExtendedWebElement women;
-    @FindBy(xpath = ".//div[@type='search']")
+    @FindBy(xpath = "//div[@type='search']")
     private SearchComponent searchComponent;
-
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -24,12 +23,6 @@ public class Header extends AbstractUIObject {
     }
     public ExtendedWebElement getNewFeature() {
         return newFeature;
-    }
-    public ExtendedWebElement getMen() {
-        return men;
-    }
-    public ExtendedWebElement getWomen() {
-        return women;
     }
     public void clickFeature(){
         newFeature.click();

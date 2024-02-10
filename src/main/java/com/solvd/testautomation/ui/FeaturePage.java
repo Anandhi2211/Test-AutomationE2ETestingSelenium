@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class FeaturePage extends AbstractPage {
-
     @FindBy(xpath = "//div[@class='categories__content']//a[contains(@aria-label,'Category for Golf')]")
     private ExtendedWebElement checkBox;
     @FindBy(xpath = "//div[@class='categories__content']//a[@data-group-type='category']")
@@ -25,11 +24,8 @@ public class FeaturePage extends AbstractPage {
     public List<ExtendedWebElement> getCategoryOptions() {
         return categoryOptions;
     }
-
     public ExtendedWebElement getCheckBox() {
         return checkBox;
     }
-
-
 
 }

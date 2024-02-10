@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class ProductItem extends AbstractUIObject {
-    @FindBy(xpath = "//div[@class='product-card__body']//div[@class='product-card__title']")
+    @FindBy(xpath = "//div[@class='product-card__title']")
     private ExtendedWebElement productName;
     public ProductItem(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
@@ -20,5 +20,8 @@ public class ProductItem extends AbstractUIObject {
     }
     public void productClick() {
         productName.click();
+    }
+    public String productText(){
+        return productName.getText();
     }
 }
