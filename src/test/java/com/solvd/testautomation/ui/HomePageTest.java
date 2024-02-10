@@ -45,7 +45,7 @@ public class HomePageTest extends AbstractTest {
         String help = "shipping";
         Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
         helpPage.typeHelpText(help);
-        Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button is not present in Help page");
+        Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button in help page is not present");
         helpPage.clickHelpButton();
     }
 
@@ -55,7 +55,7 @@ public class HomePageTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Header header = homePage.getHeader();
-        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab is not Present");
+        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab in homepage is not Present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
         featurePage.getItemList()
@@ -70,7 +70,7 @@ public class HomePageTest extends AbstractTest {
         homePage.open();
         String category = "shoe";
         Header header = homePage.getHeader();
-        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab is not Present");
+        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab in home page is not Present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
         featurePage.getCategoryOptions().stream()
@@ -83,7 +83,7 @@ public class HomePageTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Header header = homePage.getHeader();
-        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature tab is not present");
+        Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature tab in home page is not present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
         featurePage.getItemList()

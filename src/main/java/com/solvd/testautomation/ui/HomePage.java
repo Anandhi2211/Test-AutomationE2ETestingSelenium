@@ -19,8 +19,6 @@ public class HomePage extends AbstractPage {
     public Header getHeader() {
         return header;
     }
-
-    public FeaturePage featurePage;
     public HomePage(WebDriver driver) {
         super(driver);
     }
