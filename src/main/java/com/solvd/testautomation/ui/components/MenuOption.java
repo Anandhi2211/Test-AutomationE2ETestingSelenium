@@ -28,6 +28,4 @@ public class MenuOption extends AbstractUIObject {
     public void clickGetHelp(){
         help.click();
     }
-    public void typeHelpSearchBox(String message){
-    }
 }

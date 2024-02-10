@@ -7,12 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class SignUpPage extends AbstractPage {
-
-
     @FindBy(xpath = "//input[@type='text']")
     private ExtendedWebElement emailTextBox;
-
-
     @FindBy(xpath = "//button[@aria-label ='continue']")
     private ExtendedWebElement signUpContinue;
     @FindBy(xpath = "//a[@class='JSftBPEZ']")

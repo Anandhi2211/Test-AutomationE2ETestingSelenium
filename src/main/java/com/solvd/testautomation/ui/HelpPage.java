@@ -27,6 +27,7 @@ public class HelpPage extends AbstractPage {
 
 
     public void typeHelpText(String message){
+        searchBox.click();
         searchBox.type(message);
     }
 
