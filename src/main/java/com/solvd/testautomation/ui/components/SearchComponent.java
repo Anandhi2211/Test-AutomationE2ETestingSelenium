@@ -6,15 +6,11 @@ import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import java.time.Duration;
-
 public class SearchComponent extends AbstractUIObject {
-    @FindBy(xpath = ".//button[@data-var='vsButton']")
+    @FindBy(xpath = "//button[@data-var='vsButton']")
     private ExtendedWebElement searchButton;
-
-    @FindBy(id = "VisualSearchInput")
+    @FindBy(xpath = "//input[@id='VisualSearchInput']")
     private ExtendedWebElement searchTextArea;
-
 
     public SearchComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
@@ -27,12 +23,11 @@ public class SearchComponent extends AbstractUIObject {
     public ExtendedWebElement getSearchTextArea() {
         return searchTextArea;
     }
-
     public String getTypeValue(){
         return this.searchTextArea.getAttribute("placeholder");
     }
     public void typeValueToSearch(String value){
-        this.searchTextArea.type(value, 10);
+        this.searchTextArea.type(value);
     }
     public void clickSearchButton(){
         this.searchButton.click();

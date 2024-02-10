@@ -10,7 +10,18 @@ import java.util.List;
 
 public class FeaturePage extends AbstractPage {
 
-
+    @FindBy(xpath = "//div[@class='categories__content']//a[contains(@aria-label,'Category for Golf')]")
+    private ExtendedWebElement checkBox;
+    @FindBy(xpath = "//div[@class='categories__content']//a[@data-group-type='category']")
+    private List<ExtendedWebElement> categoryOptions;
+    @FindBy(xpath = "//div[@class='product-card__body']")
+    private List<ProductItem> itemList;
+    public FeaturePage(WebDriver driver) {
+        super(driver);
+    }
+    public List<ProductItem> getItemList() {
+        return itemList;
+    }
     public List<ExtendedWebElement> getCategoryOptions() {
         return categoryOptions;
     }
@@ -19,18 +30,6 @@ public class FeaturePage extends AbstractPage {
         return checkBox;
     }
 
-    @FindBy(xpath = "//button[contains(@aria-label,'Extra 20%')]//div[contains(@class,'css-18pl6ws')]")
-    private ExtendedWebElement checkBox;
 
-    @FindBy(xpath = "//div[@class='categories__content']//a[@data-group-type='category']")
-    private List<ExtendedWebElement> categoryOptions;
-    @FindBy(xpath = "//div[@class='product-card__body']")
-    private List<ProductItem> itemList;
-    public FeaturePage(WebDriver driver) {
-        super(driver);
-    }
 
-    public List<ProductItem> getItemList() {
-        return itemList;
-    }
 }

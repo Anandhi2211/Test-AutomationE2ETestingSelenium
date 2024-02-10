@@ -8,7 +8,6 @@
             <class name="com.solvd.testautomation.api.AnimalFactByAnimalIdTest"/>
             <class name="com.solvd.testautomation.api.GetWeatherByCoordinateTest"/>
             <class name="com.solvd.testautomation.ui.HomePageTest"/>
-
         </classes>
     </test>
 </suite>
