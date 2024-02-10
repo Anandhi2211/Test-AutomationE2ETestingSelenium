@@ -32,7 +32,7 @@ public class HomePageTest extends AbstractTest {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(searchComponent.getSearchButton().isElementPresent(2), "Search Button is not present");
         softAssert.assertTrue(searchComponent.getSearchTextArea().isElementPresent(2), "Search Text area is not present");
-        searchComponent.getSearchTextArea().click();
+        searchComponent.clickSearchTestArea();
         searchComponent.typeValueToSearch("Running shoe");
         searchComponent.clickSearchButton();
         softAssert.assertAll();
@@ -43,10 +43,10 @@ public class HomePageTest extends AbstractTest {
         HelpPage helpPage = new HelpPage(getDriver());
         helpPage.open();
         String help = "shipping";
-        Assert.assertTrue(helpPage.searchBox.isElementPresent(1), "Search box in Help page is not Present");
-        helpPage.searchBox.type(help);
-        Assert.assertTrue(helpPage.searchButton.isElementPresent(1), "Search Button is not present in Help page");
-        helpPage.searchButton.click();
+        Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
+        helpPage.typeHelpText(help);
+        Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button is not present in Help page");
+        helpPage.clickHelpButton();
     }
 
     @Test

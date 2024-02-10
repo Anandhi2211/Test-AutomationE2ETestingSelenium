@@ -23,6 +23,9 @@ public class SearchComponent extends AbstractUIObject {
     public void typeValueToSearch(String value){
         this.searchTextArea.type(value);
     }
+    public void clickSearchTestArea(){
+        searchTextArea.click();
+    }
     public void clickSearchButton(){
         this.searchButton.click();
     }
