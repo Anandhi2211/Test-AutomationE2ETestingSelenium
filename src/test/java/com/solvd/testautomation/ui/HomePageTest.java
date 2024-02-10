@@ -14,7 +14,7 @@ public class HomePageTest extends AbstractTest {
     public void verifyJoinUsTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        MenuOption menuOption = homePage.getMenuOption();
+        MenuOption menuOption = homePage.getHeader().getMenuOption();
         Assert.assertTrue(menuOption.getJoinUs().isElementPresent(1), "Join us Tab is not present");
         menuOption.clickJoin();
         SignUpPage signUpPage = new SignUpPage(getDriver());

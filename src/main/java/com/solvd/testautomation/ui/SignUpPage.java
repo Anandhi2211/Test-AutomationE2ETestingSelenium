@@ -22,17 +22,12 @@ public class SignUpPage extends AbstractPage {
     public SignUpPage(WebDriver driver) {
         super(driver);
     }
-    public void open() {
-        openURL(Configuration.getRequired("ui_nike_signup_url"));
-    }
     public ExtendedWebElement getSignUpContinue() {
         return signUpContinue;
     }
-
     public void setEmailTextBox(ExtendedWebElement emailTextBox) {
         this.emailTextBox = emailTextBox;
     }
-
     public void typeEmail(String email){
         emailTextBox.type(email);
     }

@@ -15,6 +15,11 @@ public class Header extends AbstractUIObject {
     private ExtendedWebElement women;
     @FindBy(xpath = "//div[@type='search']")
     private SearchComponent searchComponent;
+    @FindBy(xpath = "//div[@data-pre='DesktopUserMenu']")
+    private MenuOption menuOption;
+    public MenuOption getMenuOption() {
+        return menuOption;
+    }
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
