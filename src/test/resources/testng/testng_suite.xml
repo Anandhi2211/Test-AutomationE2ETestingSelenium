@@ -7,7 +7,9 @@
             <class name="com.solvd.testautomation.api.AnimalFactByAnimalTypeTest"/>
             <class name="com.solvd.testautomation.api.AnimalFactByAnimalIdTest"/>
             <class name="com.solvd.testautomation.api.GetWeatherByCoordinateTest"/>
-            <class name="com.solvd.testautomation.ui.HomePageTest"/>
+            <class name="com.solvd.testautomation.ui.NikeHomePageTest"/>
+            <class name="com.solvd.testautomation.ui.SearchTest"/>
+            <class name="com.solvd.testautomation.ui.JoinUsPageTest"/>
         </classes>
     </test>
 </suite>

@@ -1,42 +1,12 @@
 package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.components.Header;
-import com.solvd.testautomation.ui.components.MenuOption;
-import com.solvd.testautomation.ui.components.SearchComponent;
 import com.zebrunner.carina.core.AbstractTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-public class HomePageTest extends AbstractTest {
+public class NikeHomePageTest extends AbstractTest {
 
-    @Test
-    public void verifyJoinUsTest() {
-        HomePage homePage = new HomePage(getDriver());
-        homePage.open();
-        MenuOption menuOption = homePage.getHeader().getMenuOption();
-        Assert.assertTrue(menuOption.getJoinUs().isElementPresent(1), "Join us Tab is not present");
-        menuOption.clickJoin();
-        SignUpPage signUpPage = new SignUpPage(getDriver());
-        Assert.assertTrue(signUpPage.getSignUp().isElementPresent(1), "Sign Up Tab is not present");
-        signUpPage.signupClick();
-        signUpPage.typeEmail("anandhirmk@gmail.com");
-        signUpPage.clickSignUpContinue();
-    }
-
-    @Test
-    public void verifySearchTest() {
-        HomePage homePage = new HomePage(getDriver());
-        homePage.open();
-        SearchComponent searchComponent = homePage.getHeader().getSearchComponent();
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(searchComponent.getSearchButton().isElementPresent(2), "Search Button is not present");
-        softAssert.assertTrue(searchComponent.getSearchTextArea().isElementPresent(2), "Search Text area is not present");
-        searchComponent.clickSearchTestArea();
-        searchComponent.typeValueToSearch("Running shoe");
-        searchComponent.clickSearchButton();
-        softAssert.assertAll();
-    }
 
     @Test
     public void verifyHelpTest() {
