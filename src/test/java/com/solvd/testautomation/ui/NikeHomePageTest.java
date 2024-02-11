@@ -3,18 +3,26 @@ package com.solvd.testautomation.ui;
 import com.solvd.testautomation.ui.components.Header;
 import com.zebrunner.carina.core.AbstractTest;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class NikeHomePageTest extends AbstractTest {
 
+    @DataProvider(name = "validHelpOptions")
+    public Object[][] validHelpOptions() {
+        return new Object[][]{
+                { "shipping"},
+                { "Delivery"},
+                { "Returns" }
+        };
+    }
 
-    @Test
-    public void verifyHelpTest() {
+    @Test(description = "Verify Help options",dataProvider = "validHelpOptions")
+    public void verifyHelpTest(String options) {
         HelpPage helpPage = new HelpPage(getDriver());
         helpPage.open();
-        String help = "shipping";
         Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
-        helpPage.typeHelpText(help);
+        helpPage.typeHelpText(options);
         Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button in help page is not present");
         helpPage.clickHelpButton();
     }
