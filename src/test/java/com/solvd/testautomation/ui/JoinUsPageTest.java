@@ -26,6 +26,7 @@ public class JoinUsPageTest extends AbstractTest {
         SignUpPage signUpPage = new SignUpPage(getDriver());
         Assert.assertTrue(signUpPage.getSignUp().isElementPresent(1), "Sign Up Tab is not present");
         signUpPage.signupClick();
+        Assert.assertTrue(email.matches("^[a-zA-Z@.&\\s-]+$"),"Email is not as in expected format");
         signUpPage.typeEmail(email);
         signUpPage.clickSignUpContinue();
     }

@@ -2,6 +2,7 @@ package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.components.SearchComponent;
 import com.zebrunner.carina.core.AbstractTest;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -25,6 +26,7 @@ public class SearchTest extends AbstractTest {
         softAssert.assertTrue(searchComponent.getSearchButton().isElementPresent(2), "Search Button is not present");
         softAssert.assertTrue(searchComponent.getSearchTextArea().isElementPresent(2), "Search Text area is not present");
         searchComponent.clickSearchTestArea();
+        Assert.assertTrue(options.matches("^[a-zA-Z&\\s-]+$"),"Options are is not in the correct format");
         searchComponent.typeValueToSearch(options);
         searchComponent.clickSearchButton();
         softAssert.assertAll();

@@ -22,9 +22,6 @@ public class SignUpPage extends AbstractPage {
     public SignUpPage(WebDriver driver) {
         super(driver);
     }
-    public ExtendedWebElement getSignUpContinue() {
-        return signUpContinue;
-    }
     public void setEmailTextBox(ExtendedWebElement emailTextBox) {
         this.emailTextBox = emailTextBox;
     }

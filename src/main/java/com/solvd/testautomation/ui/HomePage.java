@@ -11,11 +11,6 @@ public class HomePage extends AbstractPage {
 
     @FindBy(xpath = "//header")
     private Header header;
-//    @FindBy(xpath = "//div[@data-pre='DesktopUserMenu']")
-//    private MenuOption menuOption;
-//    public MenuOption getMenuOption() {
-//        return menuOption;
-//    }
     public Header getHeader() {
         return header;
     }

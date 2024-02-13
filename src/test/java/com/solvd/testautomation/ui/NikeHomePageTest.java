@@ -22,6 +22,7 @@ public class NikeHomePageTest extends AbstractTest {
         HelpPage helpPage = new HelpPage(getDriver());
         helpPage.open();
         Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
+        Assert.assertTrue(options.matches("^[a-zA-Z&\\s-]+$"),"Options are not in the correct format");
         helpPage.typeHelpText(options);
         Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button in help page is not present");
         helpPage.clickHelpButton();
@@ -36,6 +37,7 @@ public class NikeHomePageTest extends AbstractTest {
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab in homepage is not Present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
+        Assert.assertTrue(productName.matches("^[a-zA-Z&\\s-]+$"),"Shoe name is not in the correct format");
         featurePage.getItemList()
                 .stream()
                 .filter(productItem -> productItem.getProductNameText().equalsIgnoreCase(productName))
@@ -51,6 +53,7 @@ public class NikeHomePageTest extends AbstractTest {
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab in home page is not Present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
+        Assert.assertTrue(category.matches("^[a-zA-Z&\\s-]+$"),"Category name is not in the correct format");
         featurePage.getCategoryOptions().stream()
                 .filter(extendedWebElement -> extendedWebElement.getText().equalsIgnoreCase(category))
                 .forEach(extendedWebElement -> extendedWebElement.click());
@@ -60,13 +63,15 @@ public class NikeHomePageTest extends AbstractTest {
     public void listOutSaleItems() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
+        String shoe = "Nike Sweet Swoosh";
         Header header = homePage.getHeader();
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature tab in home page is not present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
+        Assert.assertTrue(shoe.matches("^[a-zA-Z&\\s-]+$"),"shoe name is not in the correct format");
         featurePage.getItemList()
                 .stream()
-                .filter(productItem -> productItem.productText().equalsIgnoreCase("Nike Sweet Swoosh"))
+                .filter(productItem -> productItem.productText().equalsIgnoreCase(shoe))
                 .forEach(productItem -> productItem.productClick());
     }
 }
