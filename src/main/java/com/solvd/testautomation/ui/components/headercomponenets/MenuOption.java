@@ -1,4 +1,4 @@
-package com.solvd.testautomation.ui.components;
+package com.solvd.testautomation.ui.components.headercomponenets;
 
 import com.solvd.testautomation.ui.HelpPage;
 import com.zebrunner.carina.utils.IWebElement;

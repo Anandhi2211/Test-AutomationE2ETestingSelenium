@@ -1,6 +1,6 @@
 package com.solvd.testautomation.ui;
 
-import com.solvd.testautomation.ui.components.MenuOption;
+import com.solvd.testautomation.ui.components.headercomponenets.MenuOption;
 import com.zebrunner.carina.core.AbstractTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

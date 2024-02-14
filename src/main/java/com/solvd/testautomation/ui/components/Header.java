@@ -1,5 +1,7 @@
 package com.solvd.testautomation.ui.components;
 
+import com.solvd.testautomation.ui.components.headercomponenets.MenuOption;
+import com.solvd.testautomation.ui.components.headercomponenets.SearchComponent;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;

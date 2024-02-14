@@ -11,7 +11,6 @@ public class HelpPage extends AbstractPage {
     public ExtendedWebElement searchBox;
     @FindBy(xpath = "//button[@title='searchIcon']")
     public ExtendedWebElement searchButton;
-
     public HelpPage(WebDriver driver) {
         super(driver);
     }
@@ -24,15 +23,11 @@ public class HelpPage extends AbstractPage {
     public void open() {
         openURL(Configuration.getRequired("ui_nike_help_url"));
     }
-
-
     public void typeHelpText(String message){
         searchBox.click();
         searchBox.type(message);
     }
-
     public void clickHelpButton(){
         searchButton.click();
     }
-
 }

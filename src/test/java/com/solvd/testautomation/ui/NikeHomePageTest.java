@@ -2,6 +2,7 @@ package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.components.Header;
 import com.zebrunner.carina.core.AbstractTest;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -30,18 +31,17 @@ public class NikeHomePageTest extends AbstractTest {
 
     @Test
     public void verifyFeatureTab() {
-        String productName = "Nike Dunk Low";
+//        String productName = "Nike sweet swoosh";
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Header header = homePage.getHeader();
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature Tab in homepage is not Present");
         header.clickFeature();
         FeaturePage featurePage = new FeaturePage(getDriver());
-        Assert.assertTrue(productName.matches("^[a-zA-Z&\\s-]+$"),"Shoe name is not in the correct format");
-        featurePage.getItemList()
-                .stream()
-                .filter(productItem -> productItem.getProductNameText().equalsIgnoreCase(productName))
-                .forEach(productItem -> productItem.productClick());
+        String colorOption = "Black";
+        featurePage.clickColorOption(colorOption);
+         colorOption = "Pink";
+        featurePage.clickColorOption(colorOption);
     }
 
     @Test
@@ -63,16 +63,16 @@ public class NikeHomePageTest extends AbstractTest {
     public void listOutSaleItems() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        String shoe = "Nike Sweet Swoosh";
+        String shoe = "Air";
         Header header = homePage.getHeader();
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature tab in home page is not present");
         header.clickFeature();
-        FeaturePage featurePage = new FeaturePage(getDriver());
+//        FeaturePage featurePage = new FeaturePage(getDriver());
         Assert.assertTrue(shoe.matches("^[a-zA-Z&\\s-]+$"),"shoe name is not in the correct format");
-        featurePage.getItemList()
+        homePage.getItemList()
                 .stream()
-                .filter(productItem -> productItem.productText().equalsIgnoreCase(shoe))
-                .forEach(productItem -> productItem.productClick());
+                .filter(productItem -> productItem.productText().contains(shoe))
+                .forEach(productItem -> System.out.println("ITEM: "+productItem.getProductNameText()));
     }
 }
 
