@@ -12,11 +12,11 @@ import java.util.List;
 public class HomePage extends AbstractPage {
     @FindBy(xpath = "//header")
     private Header header;
+    @FindBy(xpath = "//div[@data-testid='product-card']")
+    private List<ProductItem> itemList;
     public Header getHeader() {
         return header;
     }
-    @FindBy(xpath = "//div[@data-testid='product-card']")
-    private List<ProductItem> itemList;
     public List<ProductItem> getItemList() {
         return itemList;
     }

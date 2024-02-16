@@ -20,14 +20,14 @@ public class HelpPage extends AbstractPage {
     public ExtendedWebElement getSearchButton() {
         return searchButton;
     }
-    public void open() {
-        openURL(Configuration.getRequired("ui_nike_help_url"));
-    }
     public void typeHelpText(String message){
         searchBox.click();
         searchBox.type(message);
     }
     public void clickHelpButton(){
         searchButton.click();
+    }
+    public void open() {
+        openURL(Configuration.getRequired("ui_nike_help_url"));
     }
 }

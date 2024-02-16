@@ -8,6 +8,7 @@ import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+
 public class Header extends AbstractUIObject {
     @FindBy(xpath = "//header//*[@class='pt1-lg']//a[@aria-label='New & Featured']")
     private ExtendedWebElement newFeature;
@@ -19,11 +20,14 @@ public class Header extends AbstractUIObject {
     private SearchComponent searchComponent;
     @FindBy(xpath = "//div[@data-pre='DesktopUserMenu']")
     private MenuOption menuOption;
-    public MenuOption getMenuOption() {
-        return menuOption;
-    }
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
+    }
+    public ExtendedWebElement getMen() {
+        return men;
+    }
+    public MenuOption getMenuOption() {
+        return menuOption;
     }
     public SearchComponent getSearchComponent() {
         return searchComponent;
@@ -33,5 +37,8 @@ public class Header extends AbstractUIObject {
     }
     public void clickFeature(){
         newFeature.click();
+    }
+    public void clickMen(){
+        men.click();
     }
 }

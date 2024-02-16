@@ -1,6 +1,5 @@
 package com.solvd.testautomation.ui;
 
-import com.zebrunner.carina.utils.config.Configuration;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
@@ -13,14 +12,14 @@ public class SignUpPage extends AbstractPage {
     private ExtendedWebElement signUpContinue;
     @FindBy(xpath = "//a[@class='JSftBPEZ']")
     public ExtendedWebElement signUp;
+    public SignUpPage(WebDriver driver) {
+        super(driver);
+    }
     public ExtendedWebElement getSignUp() {
         return signUp;
     }
     public void signupClick(){
         signUp.click();
-    }
-    public SignUpPage(WebDriver driver) {
-        super(driver);
     }
     public void setEmailTextBox(ExtendedWebElement emailTextBox) {
         this.emailTextBox = emailTextBox;

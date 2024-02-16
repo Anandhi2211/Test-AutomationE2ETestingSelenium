@@ -1,6 +1,5 @@
 package com.solvd.testautomation.ui;
 
-import com.solvd.testautomation.ui.components.ProductItem;
 import com.solvd.testautomation.ui.components.headercomponenets.SearchComponent;
 import com.zebrunner.carina.core.AbstractTest;
 import org.testng.Assert;
@@ -10,8 +9,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class SearchTest extends AbstractTest {
 
@@ -22,7 +20,8 @@ public class SearchTest extends AbstractTest {
         };
     }
 
-    //updated
+
+    //updated 1. task
     @Test(description = "Verify Search options", dataProvider = "validSearchOptions")
     public void verifySearchTest(String options) {
         HomePage homePage = new HomePage(getDriver());

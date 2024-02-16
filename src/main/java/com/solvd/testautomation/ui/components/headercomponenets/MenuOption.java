@@ -1,7 +1,6 @@
 package com.solvd.testautomation.ui.components.headercomponenets;
 
-import com.solvd.testautomation.ui.HelpPage;
-import com.zebrunner.carina.utils.IWebElement;
+
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
@@ -22,9 +21,7 @@ public class MenuOption extends AbstractUIObject {
     public ExtendedWebElement getHelp() {
         return help;
     }
-    public void clickJoin(){
-        joinUs.click();
-    }
+    public void clickJoin(){ joinUs.click(); }
     public void clickGetHelp(){
         help.click();
     }

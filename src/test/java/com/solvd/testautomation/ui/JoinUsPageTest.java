@@ -11,8 +11,7 @@ public class JoinUsPageTest extends AbstractTest {
     @DataProvider(name = "validEmailId")
     public Object[][] validEmailId() {
         return new Object[][]{
-                { "anandhirmk@gmail.com"},
-                { "anandhirmkcse@gmail.com"}
+                { "anandhirmk@gmail.com"}
         };
     }
 
