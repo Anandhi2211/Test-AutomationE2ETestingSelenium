@@ -1,6 +1,5 @@
 package com.solvd.testautomation.ui;
 
-import com.solvd.testautomation.ui.components.LabelOptions;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;

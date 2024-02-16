@@ -15,8 +15,6 @@ public class ProductItem extends AbstractUIObject {
     private ExtendedWebElement link;
     @FindBy(xpath = "//*[@aria-label='Filter for %s']")
     private ExtendedWebElement colorChoice ;
-
-
     @FindBy(xpath = "//div[@data-testid='product-card']//div[@class='product-card__info']")
     private ExtendedWebElement mouseHoverElement;
     public ProductItem(WebDriver driver, SearchContext searchContext) {

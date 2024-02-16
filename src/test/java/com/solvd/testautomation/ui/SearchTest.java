@@ -20,7 +20,6 @@ public class SearchTest extends AbstractTest {
         };
     }
 
-
     //updated 1. task
     @Test(description = "Verify Search options", dataProvider = "validSearchOptions")
     public void verifySearchTest(String options) {

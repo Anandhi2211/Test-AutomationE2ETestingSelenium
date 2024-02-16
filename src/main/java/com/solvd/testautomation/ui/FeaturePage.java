@@ -1,6 +1,5 @@
 package com.solvd.testautomation.ui;
 
-import com.solvd.testautomation.ui.components.LabelOptions;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
@@ -15,9 +14,6 @@ public class FeaturePage extends AbstractPage {
     private List<ExtendedWebElement> categoryOptions;
     @FindBy(xpath = "//*[@aria-label='Filter for %s']")
     private ExtendedWebElement colorChoice ;
-
-
-
     public FeaturePage(WebDriver driver) { super(driver); }
     public ExtendedWebElement getColorChoice() { return colorChoice; }
     public List<ExtendedWebElement> getCategoryOptions() {
