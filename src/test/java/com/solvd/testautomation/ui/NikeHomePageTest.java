@@ -2,18 +2,25 @@ package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.components.Header;
 import com.solvd.testautomation.ui.components.headercomponenets.AutoSuggest;
+import com.solvd.testautomation.ui.listener.MyListener;
 import com.zebrunner.carina.core.AbstractTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ISuite;
+import org.testng.ITestContext;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+@Listeners({ MyListener.class })
 public class NikeHomePageTest extends AbstractTest {
 
     @DataProvider(name = "validHelpOptions")
@@ -56,6 +63,8 @@ public class NikeHomePageTest extends AbstractTest {
         Assert.assertTrue(colorOption.matches("^[a-zA-Z&\\s-]+$"), "Give color options is not in a given format");
         featurePage.clickColorOption(colorOption);
         homePage.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+
     }
 
     @Test//4. Task
@@ -82,7 +91,8 @@ public class NikeHomePageTest extends AbstractTest {
         helpPage.clickHelpButton();
     }
 
-    @Test//5. task
+//    MyListener obj = new MyListener();
+    @Test //5. task
     public void listOutSaleItems() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -91,16 +101,22 @@ public class NikeHomePageTest extends AbstractTest {
         Assert.assertTrue(header.getNewFeature().isElementPresent(2), "New Feature tab in home page is not present");
         header.clickFeature();
         Assert.assertTrue(shoe.matches("^[a-zA-Z&\\s-]+$"), "shoe name is not in the correct format");
+        JavascriptExecutor js = (JavascriptExecutor) homePage.getDriver();
+        js.executeScript("scroll(0, 500);");//
         homePage.getItemList().stream()
                 .filter(productItem -> productItem.productText().contains(shoe))
                 .forEach(productItem ->
                 {
+//                    js.executeScript("scroll(0, 250);");
                     Actions actions = new Actions(getDriver());
                     actions.moveToElement(productItem.getProductName().getElement()).perform();
                     WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(3));
 //                    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-testid='product-card']//div[@class='product-card__info']")));
 //                    Assert.assertTrue(productItem.getMouseHoverElement().isElementPresent(5),"Mouse hover element is not working");
                 });
+//        obj.onExecutionFinish();
+
+
     }
 }
 

@@ -28,11 +28,10 @@ public class AnimalFactByAnimalTypeTest {
                 .<String>withPredicate("datePredicate", date -> isDateValid(date) && ZonedDateTime.parse(date)
                         .isAfter(LocalDate.of(1999,1,1)
                                 .atStartOfDay(ZoneId.systemDefault())));
-
 //        getAnimalFactsByAnimalType.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
-//
         getAnimalFactsByAnimalType.validateResponse(comparatorContext);
     }
+
     private static boolean isDateValid(String date) {
         try {
             ZonedDateTime.parse(date);
