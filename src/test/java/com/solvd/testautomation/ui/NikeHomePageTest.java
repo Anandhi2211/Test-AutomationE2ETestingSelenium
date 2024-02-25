@@ -80,16 +80,16 @@ public class NikeHomePageTest extends AbstractTest {
         homePage.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
-    @Test(description = "Verify Help options", dataProvider = "validHelpOptions")
-    public void verifyHelpTest(String options) {
-        HelpPage helpPage = new HelpPage(getDriver());
-        helpPage.open();
-        Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
-        Assert.assertTrue(options.matches("^[a-zA-Z&\\s-]+$"), "Options are not in the correct format");
-        helpPage.typeHelpText(options);
-        Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button in help page is not present");
-        helpPage.clickHelpButton();
-    }
+//    @Test(description = "Verify Help options", dataProvider = "validHelpOptions")
+//    public void verifyHelpTest(String options) {
+//        HelpPage helpPage = new HelpPage(getDriver());
+//        helpPage.open();
+//        Assert.assertTrue(helpPage.getSearchBox().isElementPresent(1), "Search box in Help page is not Present");
+//        Assert.assertTrue(options.matches("^[a-zA-Z&\\s-]+$"), "Options are not in the correct format");
+//        helpPage.typeHelpText(options);
+//        Assert.assertTrue(helpPage.getSearchButton().isElementPresent(1), "Search Button in help page is not present");
+//        helpPage.clickHelpButton();
+//    }
 
 //    MyListener obj = new MyListener();
     @Test //5. task

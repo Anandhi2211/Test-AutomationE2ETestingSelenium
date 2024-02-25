@@ -2,34 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Test Automation" verbose="1" parallel="tests" thread-count="10">
-
-
-
-<!--    <test name="Test Automation" parallel="methods" thread-count="5">-->
-<!--        <classes>-->
-<!--            <class name="com.solvd.testautomation.api.AnimalFactByAnimalTypeTest"/>-->
-<!--            <class name="com.solvd.testautomation.api.AnimalFactByAnimalIdTest"/>-->
-<!--            <class name="com.solvd.testautomation.api.GetWeatherByCoordinateTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
     <listeners>
         <listener class-name="com.solvd.testautomation.ui.listener.MyListener"/>
     </listeners>
-    <test name="UI" parallel="methods" thread-count="3">
+    <test name="UI" parallel="methods" thread-count="5">
         <classes>
-<!--        <class name="com.solvd.testautomation.ui.NikeHomePageTest">-->
-<!--            <methods>-->
-<!--                <exclude name = "autoSuggestion"/>-->
-<!--                <exclude name = "verifyFeatureTab"/>-->
-<!--                <exclude name = "clickFeatureOpensNewTab"/>-->
-<!--                <exclude name = "verifyHelpTest"/>-->
-<!--            </methods>-->
-<!--        </class>-->
-<!--        <class name="com.solvd.testautomation.ui.SearchTest"/>-->
-<!--        <class name="com.solvd.testautomation.ui.JoinUsPageTest"/>-->
-<!--        <class name="com.solvd.testautomation.ui.FrameHomePagePracticeTest"/>-->
             <class name="com.solvd.testautomation.ui.FactoryTest"/>
-    </classes>
 
+            <class name="com.solvd.testautomation.api.AnimalFactByAnimalTypeTest"/>
+            <class name="com.solvd.testautomation.api.AnimalFactByAnimalIdTest"/>
+<!--            <class name="com.solvd.testautomation.api.GetWeatherByCoordinateTest"/>-->
+
+            <class name="com.solvd.testautomation.ui.NikeHomePageTest"/>
+            <class name="com.solvd.testautomation.ui.SearchTest"/>
+            <class name="com.solvd.testautomation.ui.JoinUsPageTest"/>
+            <class name="com.solvd.testautomation.ui.FrameHomePagePracticeTest"/>
+            <class name="com.solvd.testautomation.ui.NavigateToLabels"/>
+            <class name="com.solvd.testautomation.ui.ScenarioPracticeTest"/>
+        </classes>
     </test>
 </suite>
