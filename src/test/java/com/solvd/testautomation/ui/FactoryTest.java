@@ -2,7 +2,9 @@ package com.solvd.testautomation.ui;
 
 import com.solvd.testautomation.ui.factory.LoginFactory;
 import com.zebrunner.carina.core.AbstractTest;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.Color;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -15,6 +17,12 @@ public class FactoryTest extends AbstractTest {
         };
     }
 
+    @BeforeMethod
+    public void maximize(){
+        Dimension dm = new Dimension(450,630);
+        //Setting the current window to that dimension
+        getDriver().manage().window().setSize(dm);
+    }
     @Test(dataProvider = "testData")
     public void validateCustomerLoginTest(String type, String username, String password) {
         FactoryLoginValidation validation = new FactoryLoginValidation(getDriver());
@@ -35,6 +43,7 @@ public class FactoryTest extends AbstractTest {
         System.out.println("color1"+color1);
         //Assert statements
     }
+
 
 
 }

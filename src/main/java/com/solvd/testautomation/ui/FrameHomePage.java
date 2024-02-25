@@ -23,4 +23,5 @@ public class FrameHomePage extends AbstractPage {
     public void open() {
         openURL(Configuration.getRequired("frame_url"));
     }
+
 }
