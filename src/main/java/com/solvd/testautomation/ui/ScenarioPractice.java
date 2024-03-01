@@ -13,7 +13,6 @@ public class ScenarioPractice extends AbstractPage {
     private ExtendedWebElement dropDown;
     @FindBy(xpath = "//select[@name='country']//option")
     private List<ExtendedWebElement> optionList;
-
     public ScenarioPractice(WebDriver driver) {
         super(driver);
     }
@@ -29,5 +28,4 @@ public class ScenarioPractice extends AbstractPage {
     public void clickDropDownOption(){
         this.dropDown.click();
     }
-
 }

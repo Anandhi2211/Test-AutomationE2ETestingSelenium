@@ -17,7 +17,6 @@ public class GetWeatherByCoordinateTest {
         currentWeatherByCoordinates.addProperty("coordinate",coordinate);
         currentWeatherByCoordinates.expectResponseStatus(HttpResponseStatusType.OK_200);
         currentWeatherByCoordinates.callAPI();
-//        JsonComparatorContext comparatorContext = JsonComparatorContext.context().withComparator();
         currentWeatherByCoordinates.validateResponse();
     }
 }

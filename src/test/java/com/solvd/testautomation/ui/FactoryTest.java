@@ -1,11 +1,14 @@
 package com.solvd.testautomation.ui;
 
+import com.solvd.testautomation.ui.factory.Customer;
+import com.solvd.testautomation.ui.factory.Employee;
 import com.solvd.testautomation.ui.factory.LoginFactory;
 import com.zebrunner.carina.core.AbstractTest;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.Color;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 public class FactoryTest extends AbstractTest {
@@ -16,7 +19,6 @@ public class FactoryTest extends AbstractTest {
                 {"Employee", "student", "Password123"}
         };
     }
-
     @BeforeMethod
     public void maximize(){
         Dimension dm = new Dimension(450,630);
@@ -43,7 +45,4 @@ public class FactoryTest extends AbstractTest {
         System.out.println("color1"+color1);
         //Assert statements
     }
-
-
-
 }

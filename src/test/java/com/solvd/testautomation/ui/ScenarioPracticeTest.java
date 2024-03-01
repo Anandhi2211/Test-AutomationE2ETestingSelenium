@@ -12,8 +12,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class ScenarioPracticeTest extends AbstractTest {
-
-
     @Test
     public void validateDropDownTest() {
         ScenarioPractice scenarioPractice = new ScenarioPractice(getDriver());
@@ -31,9 +29,8 @@ public class ScenarioPracticeTest extends AbstractTest {
                         }
                 );
     }
-
     private void takeSnapShot(WebDriver driver) {
-        TakesScreenshot scrShot =((TakesScreenshot)driver);
+        TakesScreenshot scrShot = (TakesScreenshot) driver;
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         File DestFile=new File("C://Users//anand//OneDrive//Desktop//Anandhi_Learning//QA Training//Solvd//Test Automation//Screenshot//test.png");
         try {

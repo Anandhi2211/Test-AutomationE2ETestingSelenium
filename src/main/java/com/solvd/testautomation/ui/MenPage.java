@@ -16,5 +16,4 @@ public class MenPage extends AbstractPage {
     }
     @FindBy(xpath = "//ul[@class='_AKr_3ox']//a[@class='JSftBPEZ']")
     List<ExtendedWebElement> labels;
-
 }

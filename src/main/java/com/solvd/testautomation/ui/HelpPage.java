@@ -1,6 +1,5 @@
 package com.solvd.testautomation.ui;
 
-import com.zebrunner.carina.utils.config.Configuration;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +26,4 @@ public class HelpPage extends AbstractPage {
     public void clickHelpButton(){
         searchButton.click();
     }
-//    public void open() {
-//        openURL(Configuration.getRequired("ui_nike_help_url"));
-//    }
 }

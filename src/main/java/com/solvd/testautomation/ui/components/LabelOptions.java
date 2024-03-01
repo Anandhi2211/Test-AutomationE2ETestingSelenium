@@ -11,7 +11,6 @@ import java.util.List;
 public class LabelOptions extends AbstractUIObject {
     @FindBy(xpath = "//ul[@class='_AKr_3ox']//a[@class='JSftBPEZ']")
     List<ExtendedWebElement> labels;
-
     public LabelOptions(WebDriver driver) {
         super(driver);
     }

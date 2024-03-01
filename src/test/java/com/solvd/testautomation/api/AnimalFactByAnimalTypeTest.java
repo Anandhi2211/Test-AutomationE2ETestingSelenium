@@ -14,7 +14,6 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeParseException;
 
 public class AnimalFactByAnimalTypeTest {
-
     @Test
     public void verifyAnimalDataTest() {
         Animal animal = new Animal();

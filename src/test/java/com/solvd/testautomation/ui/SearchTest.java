@@ -61,4 +61,12 @@ public class SearchTest extends AbstractTest {
         }
         return flag;
     }
+
+    @Test
+    public void navigatePage(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        homePage.getHeader().getNewFeature().click();
+        homePage.getDriver().navigate().back();
+    }
 }

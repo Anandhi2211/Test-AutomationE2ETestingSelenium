@@ -13,7 +13,7 @@ public class NavigateToLabels extends AbstractTest {
     public void verifyNavigateForMenTab() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        Assert.assertTrue(homePage.getHeader().getMen().isElementPresent(2),"Men Tab is not Present in the Header");
+        Assert.assertTrue(homePage.getHeader().getMen().isElementPresent(2), "Men Tab is not Present in the Header");
         homePage.getHeader().clickMen();
         MenPage menPage = new MenPage(getDriver());
         String option = Menu.SALE.getOptionName();
@@ -21,9 +21,9 @@ public class NavigateToLabels extends AbstractTest {
         Assert.assertTrue(option.matches("^[a-zA-Z\\s-]+$"), "Label Option is not in the correct format");
         menPage.getLabels().stream()
                 .filter(extendedWebElement ->
-                        extendedWebElement.getAttribute("aria-label")
-                                .equalsIgnoreCase(option))
-                .findAny().ifPresent(extendedWebElement -> {
+                        extendedWebElement.getAttribute("aria-label").equalsIgnoreCase(option))
+                .findAny()
+                .ifPresent(extendedWebElement -> {
                             String url = extendedWebElement.getAttribute("href");
                             getDriver().switchTo().newWindow(WindowType.TAB).get(url);
                         }

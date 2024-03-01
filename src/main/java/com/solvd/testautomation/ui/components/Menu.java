@@ -5,7 +5,6 @@ public enum Menu {
     CLOTHING("Clothing"),
     ACCESSORIES("Accessories"),
     SALE("Sale");
-
     public String getOptionName() {
         return optionName;
     }

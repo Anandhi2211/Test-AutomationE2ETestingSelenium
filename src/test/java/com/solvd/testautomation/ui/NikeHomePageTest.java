@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-@Listeners({ MyListener.class })
+@Listeners({MyListener.class})
 public class NikeHomePageTest extends AbstractTest {
 
     @DataProvider(name = "validHelpOptions")
@@ -35,7 +35,7 @@ public class NikeHomePageTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         String option = "dunk";
-        Assert.assertTrue(homePage.getHeader().getSearchComponent().getSearchTextArea().isElementPresent(2),"Search Text Area element is not present");
+        Assert.assertTrue(homePage.getHeader().getSearchComponent().getSearchTextArea().isElementPresent(2), "Search Text Area element is not present");
         homePage.getHeader().getSearchComponent().clickSearchTestArea();
         Assert.assertTrue(option.matches("^[a-zA-Z\\s-]+$"), "Options are not in the expected format");
         homePage.getHeader().getSearchComponent().typeValueToSearch(option);
@@ -74,9 +74,9 @@ public class NikeHomePageTest extends AbstractTest {
         getDriver().manage().window().maximize();
         Assert.assertTrue(homePage.getHeader().getNewFeature().isElementPresent(2), "New Feature Tab in home page is not Present");
         String url = homePage.getHeader().getNewFeature().getAttribute("href");
-        Assert.assertTrue(!url.isEmpty(),"Url is empty");
+        Assert.assertTrue(!url.isEmpty(), "Url is empty");
         getDriver().switchTo().newWindow(WindowType.TAB).get(url);
-        Assert.assertTrue(getDriver().getCurrentUrl().equals(homePage.getHeader().getNewFeature().getAttribute("href")),"Both the links are different");
+        Assert.assertTrue(getDriver().getCurrentUrl().equals(homePage.getHeader().getNewFeature().getAttribute("href")), "Both the links are different");
         homePage.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
@@ -91,7 +91,7 @@ public class NikeHomePageTest extends AbstractTest {
 //        helpPage.clickHelpButton();
 //    }
 
-//    MyListener obj = new MyListener();
+    //    MyListener obj = new MyListener();
     @Test //5. task
     public void listOutSaleItems() {
         HomePage homePage = new HomePage(getDriver());
@@ -107,16 +107,9 @@ public class NikeHomePageTest extends AbstractTest {
                 .filter(productItem -> productItem.productText().contains(shoe))
                 .forEach(productItem ->
                 {
-//                    js.executeScript("scroll(0, 250);");
                     Actions actions = new Actions(getDriver());
-                    actions.moveToElement(productItem.getProductName().getElement()).perform();
-                    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(3));
-//                    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-testid='product-card']//div[@class='product-card__info']")));
-//                    Assert.assertTrue(productItem.getMouseHoverElement().isElementPresent(5),"Mouse hover element is not working");
+                    actions.moveToElement(productItem.getProductName().getElement()).build().perform();
                 });
-//        obj.onExecutionFinish();
-
-
     }
 }
 
