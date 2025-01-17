@@ -1,4 +1,4 @@
-Selenium E-Commerce Website E2E Testing
+#E-Commerce Website E2E Testing
 
 Project Overview
 
