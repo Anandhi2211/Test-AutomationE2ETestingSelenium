@@ -16,27 +16,6 @@ Build Tool: Maven
 
 Design Pattern: Page Object Model (POM)
 
-Automation Framework: Carina Framework
-
-Project Structure
-
-├── src
-│   ├── main
-│   │   └── java
-│   │       └── com
-│   │           └── ecommerce
-│   │               ├── pages          # POM classes for different web pages
-│   │               ├── utils          # Utility classes
-│   │               └── base           # Base classes and configurations
-│   └── test
-│       └── java
-│           └── com
-│               └── ecommerce
-│                   └── tests         # Test cases
-├── pom.xml                           # Maven configuration file
-├── testng.xml                        # TestNG configuration file
-└── README.md                         # Project documentation
-
 Key Features
 
 Page Object Model (POM): Modular design for easy maintenance and scalability.
